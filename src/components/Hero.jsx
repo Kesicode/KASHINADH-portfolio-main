@@ -4,6 +4,7 @@ import mePortrait from '../assets/me_ranga.webp'
 import littlePortrait from '../assets/little_ranga.webp'
 import EyeO from './EyeO'
 import './Hero.css'
+import { profile } from '../data/portfolio'
 
 const Hero = ({ isStudio, isSadMode }) => {
   return (
@@ -23,7 +24,7 @@ const Hero = ({ isStudio, isSadMode }) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           >
-            HELL<EyeO size={Math.min(window.innerWidth * 0.12, 120)} /><span style={{ color: 'var(--accent-color)' }}>.</span>
+            BUILD<EyeO size={Math.min(window.innerWidth * 0.12, 120)} /><span style={{ color: 'var(--accent-color)' }}>.</span>
           </motion.h1>
 
           <motion.div
@@ -45,7 +46,7 @@ const Hero = ({ isStudio, isSadMode }) => {
               filter: isSadMode ? 'drop-shadow(0 0 5px rgba(255,255,255,0.4))' : 'none',
               transition: 'all 1s ease'
             }}>
-              I am Adhan Hashim
+              I am K S Kashinadh
             </span>
             <svg width="40" height="40" viewBox="0 0 40 40" style={{ transform: 'rotate(45deg)' }}>
               <path
@@ -66,7 +67,7 @@ const Hero = ({ isStudio, isSadMode }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 1 }}
         >
-          Designing visuals, shaping stories, and building digital experiences. Currently pursuing Computer Science while exploring the space where creativity meets technology.
+          {profile.bio}
 
         </motion.p>
       </div>
@@ -81,7 +82,7 @@ const Hero = ({ isStudio, isSadMode }) => {
         <div style={{ position: 'relative' }}>
           <img
             src={isSadMode ? littlePortrait : mePortrait}
-            alt="Adhan Hashim"
+            alt="K S Kashinadh"
             style={{
               width: '100%',
               height: 'auto',
@@ -118,7 +119,7 @@ const Hero = ({ isStudio, isSadMode }) => {
               style={{ width: '4px', height: '8px', background: 'var(--accent-color)', margin: '5px auto', borderRadius: '2px' }}
             />
           </div>
-          <span style={{ fontSize: '0.8rem', letterSpacing: '2px', color: 'var(--muted-text)' }}>DIVE DOWN</span>
+          <span style={{ fontSize: '0.8rem', letterSpacing: '2px', color: 'var(--muted-text)' }}>EXPLORE SYSTEMS</span>
         </div>
       </div>
     </section>

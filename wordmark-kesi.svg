@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .border { stroke: #30363d; stroke-width: 2; fill: none; }
+      .text-prompt { fill: #8b949e; font-family: 'Courier New', monospace; font-size: 13px; }
+      .text-ascii { fill: #58a6ff; font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold; white-space: pre; }
+      .text-shadow { fill: rgba(88, 166, 255, 0.4); font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold; white-space: pre; filter: blur(4px); }
+    </style>
+  </defs>
+  
+  <!-- Window -->
+  <rect class="bg" width="596" height="396" x="2" y="2" rx="12" ry="12" />
+  <rect class="border" width="596" height="396" x="2" y="2" rx="12" ry="12" />
+  
+  <!-- Buttons -->
+  <circle cx="28" cy="28" r="6" fill="#ff5f56" />
+  <circle cx="48" cy="28" r="6" fill="#ffbd2e" />
+  <circle cx="68" cy="28" r="6" fill="#27c93f" />
+
+  <!-- Title -->
+  <text class="text-prompt" x="300" y="32" text-anchor="middle">kesi@github: ~$ ./wordmark.sh --3d</text>
+  
+  <line x1="2" y1="50" x2="598" y2="50" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ASCII Art KESI -->
+  <g transform="translate(130, 160)">
+    <text class="text-shadow" y="0">    __ __ ___________ ____</text>
+    <text class="text-shadow" y="22">   / //_// ____/ ___//  _/</text>
+    <text class="text-shadow" y="44">  / ,&lt;  / __/  \__ \ / /  </text>
+    <text class="text-shadow" y="66"> / /| |/ /___ ___/ // /   </text>
+    <text class="text-shadow" y="88">/_/ |_/_____//____/___/   </text>
+
+    <text class="text-ascii" y="0">    __ __ ___________ ____</text>
+    <text class="text-ascii" y="22">   / //_// ____/ ___//  _/</text>
+    <text class="text-ascii" y="44">  / ,&lt;  / __/  \__ \ / /  </text>
+    <text class="text-ascii" y="66"> / /| |/ /___ ___/ // /   </text>
+    <text class="text-ascii" y="88">/_/ |_/_____//____/___/   </text>
+  </g>
+</svg>
